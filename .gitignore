@@ -16,4 +16,5 @@ npm-debug.log
 
 /tests/pageobjects/**
 /tests/screenobjects/**
-/specs/**
+/tests/specs/**
+/tests/constants.js
