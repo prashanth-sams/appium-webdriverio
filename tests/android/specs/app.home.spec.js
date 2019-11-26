@@ -8,6 +8,5 @@ describe('Validate home page', () => {
 
     it('should be able to validate calculator', () => {
         HomeScreen.addPlant.click();
-        // expect(HomeScreen.result.getText()).toEqual('50');
     });
 });

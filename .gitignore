@@ -13,6 +13,7 @@ npm-debug.log
 
 # custom
 *.log
+allure-results/
 
 /tests/pageobjects/**
 /tests/screenobjects/**

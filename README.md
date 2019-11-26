@@ -11,7 +11,12 @@
 
     npm run android.app
 
+## Report
 
+> Allure
+```
+allure generate allure-results && allure open
+```
 
 ## List devices
 

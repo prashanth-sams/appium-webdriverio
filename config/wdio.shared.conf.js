@@ -18,7 +18,7 @@ exports.config = {
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,
-    reporters: [ 'spec' ],
+    reporters: ['spec', 'allure'],
 
     // ====================
     // Appium Configuration
