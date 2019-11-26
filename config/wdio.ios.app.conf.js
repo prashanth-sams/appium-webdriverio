@@ -5,7 +5,7 @@ const config = require('./wdio.shared.conf').config;
 // Specs
 // ============
 config.specs = [
-    './tests/specs/**/app*.spec.js',
+    './tests/ios/specs/**/app*.spec.js',
 ];
 
 // ============
@@ -21,7 +21,7 @@ config.capabilities = [
         platformVersion: '13.2',
         orientation: 'PORTRAIT',
         // The path to the app
-        app: path.join(process.cwd(), './apps/iOS-Simulator-NativeDemoApp-0.2.1.app.zip'),
+        app: path.join(process.cwd(), './apps/TestApp.app.zip'),
         // Read the reset strategies very well, they differ per platform, see
         // http://appium.io/docs/en/writing-running-appium/other/reset-strategies/
         noReset: true,
