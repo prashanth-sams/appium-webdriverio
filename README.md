@@ -30,7 +30,7 @@ docker-compose up -d
 ```
 Now, open the URL http://localhost:4040/ and to see the api docs http://localhost:5050/
 
-Fianlly bring down docker service
+Finally bring down docker service
 ```
 docker-compose down
 ```
