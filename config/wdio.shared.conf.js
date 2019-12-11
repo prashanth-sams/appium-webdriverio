@@ -1,3 +1,6 @@
+const fs = require('fs-extra');
+const dir = './screenshots';
+
 exports.config = {
     // ====================
     // Runner and framework
@@ -32,12 +35,14 @@ exports.config = {
     // ====================
     beforeSession: (config, capabilities, specs) => {
         require('@babel/register');
+        fs.ensureDirSync(dir);
+        fs.emptyDirSync(dir)
     },
 
     afterTest: function(test)  {
         if (test.error !== undefined) {
             driver.takeScreenshot();
-            browser.saveScreenshot('./screenshots/screenshot.png');
+            browser.saveScreenshot(`${dir}/${new Date().valueOf()}.png`);
         }
     }
 };
