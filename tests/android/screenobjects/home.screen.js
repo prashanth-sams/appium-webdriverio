@@ -1,7 +1,7 @@
 import AppScreen from './app.screen';
 
 const SELECTORS = {
-    ADD_PLANT: 'android=new UiSelector().resourceId("com.google.samples.apps.sunflower:id/add_plant")'
+    ADD_PLANT: 'android=new UiSelector().resourceId("com.google.samples.apps.sunflower:id/add_lant")'
 };
 
 class HomeScreen extends AppScreen {
