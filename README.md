@@ -1,6 +1,13 @@
 # appium-webdriverio
 > **Note:** It's a copy of webdriverio boilerplate framework
 
+## Features
+- Android and IOS support
+- Allure report
+- Generic screenshot on failure
+- Screenshots in Allure report
+- Docker service for allure report
+
 ## Runner
 > iOS
 ```
@@ -29,12 +36,12 @@ docker-compose down
 ```
 
 ## List devices
-
 > iOS
-
-    instruments -s devices
-    xcrun simctl list
-
+```
+instruments -s devices
+xcrun simctl list
+```
 > Android
-
-    adb devices
+```
+adb devices
+```

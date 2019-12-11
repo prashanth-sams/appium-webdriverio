@@ -33,4 +33,11 @@ exports.config = {
     beforeSession: (config, capabilities, specs) => {
         require('@babel/register');
     },
+
+    afterTest: function(test)  {
+        if (test.error !== undefined) {
+            driver.takeScreenshot();
+            browser.saveScreenshot('./screenshots/screenshot.png');
+        }
+    }
 };
